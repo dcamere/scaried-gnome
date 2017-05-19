@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.game{
+	width: 50%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	position: relative;
+	border: 2px black solid;
+}
+.box{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 50px;
+	width: 30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.boxHeader{
+	height: 20px;
+	width: 100%;
+	background-color: pink;
+	position: relative;
+}
+.boxHeader::before{
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	border: solid 15px transparent;
+	border-bottom-color: green;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.boxBody{
+	height: 20px;
+	width: 60%;
+	background-color: black;
+	margin: auto;
+}
+.boxFooter{
+	height: 10px;
+	width: 100%;
+	background-color: brown;
+}
